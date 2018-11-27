@@ -1,12 +1,21 @@
 
 .logo {
-    width: 130px;
-    margin-left: 5%;
+    background-color: #334F6E;
+    padding-top: 10px;
+}
+
+.logohome {
+    width: 140px;
+    height: 70px;
+    cursor: pointer;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*login and signup*/
 
 .login-page {
-    width: 90%;
+    width: 100%;
     padding: 8% 0 0;
     margin: auto;
 }
@@ -23,7 +32,7 @@ h1{
     background: #FFFFFF;
     max-width: 360px;
     margin: 0 auto 100px;
-    padding: 50px;
+    padding: 80px;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
@@ -105,78 +114,3 @@ body {
     -moz-osx-font-smoothing: grayscale;      
 }
 
-/*header*/
-.main-header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    height: 6rem;
-    color: white;
-    background: #444;
-    line-height: 6rem;
-    transform: translateY(0);
-    transform: translate3d(0,0,0);
-    transition: .25s transform;
-    backface-visibility: hidden;
-}
-
-.heads-up {
-    transform: translateY(-6rem);
-    transform: translate3d(0,-6rem,0);
-}
-
-.main-header h1 {
-    float: left;
-    font-size: 1.4rem;
-    margin: 0 0 0 2rem;
-    text-transform: uppercase;
-    
-}
-
-.main-header nav {
-    float: right;
-    font-size: 1.4rem;
-}
-
-.main-header nav ul { 
-    margin: 0; 
-    padding: 0; 
-}
-
-.main-header nav li {
-    display: inline-block;
-    padding: 0 2rem;
-    border-left: .1rem solid #555;
-}
-
-/*table*/
-#m th, #m td {
-  padding: 0.8rem;
-  /*border-collapse: collapse; */
-  border-radius: 5px;
-}
-#m {
-  margin: 0px auto;
-  padding: 0.8rem;
-}
-
-/*#m tr:nth-child(1n) {
-  opacity: 0;
-}
-
- To center just the first column 
-*/#m tr td:first-child {
-  text-align: center;
-}
-
-#m tr:nth-child(2n) {
-  background: #ff6666;
-}
-#m tr:nth-child(2n - 1) {
-  background: #fcfcfc;
-}
-#m tr:first-child th:first-child {
-  border-top-left-radius: 15px;
-}

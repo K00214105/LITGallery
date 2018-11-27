@@ -1,5 +1,4 @@
 <!doctype html>
-<!--  -->
 <html lang="en">
 
 <head>
@@ -9,9 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="icon" 
-     type="image/png" 
-     href="img/sss.png">
+    <link rel="icon" type="image/png" href="img/sss.png">
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
 </head>
 
@@ -22,15 +19,15 @@
             <div class="header">
 
                 <div class="loginSignUp">
-                    <a class="username" href="#"><img src="img/039.jpeg" alt="Profile Picture">User Name</a>
+                    <a class="username" href="profile.html"><img src="img/039.jpeg" alt="Profile Picture">User Name</a>
                     <a href="signIn.html">Sign In</a>
                     <a href="signUp.html">Sign Up</a>
-                    <a href="#"></a>
+                    <a href="#">Log Out</a>
                 </div>
 
                 <div class="logo">
                     <a href="index.html">
-                        <img src="img/logo1.png" alt="LIT Gallery Logo">
+                        <img class="logohome" src="img/logo1.png" alt="LIT Gallery Logo">
                     </a>
                 </div>
 
@@ -39,11 +36,11 @@
                     <input type="checkbox" id="toggle" />
                     <div class="menu">
                         <a href="index.html">Home</a>
-                        <a href="#">Profile</a>
+                        <a href="profile.html">Profile</a>
                         <a href="gallery.html" class="active">Gallery</a>
-                        <a href="#">Show</a>
-                        <a href="#">Course</a>
-                        <a href="#">Admin Area</a>
+                        <a href="showpage.html">Show</a>
+                        
+                        <a href="adminArea.html">Admin Area</a>
                         <input class="search" type="text" placeholder="Search..">
                     </div>
                 </div>
@@ -54,14 +51,13 @@
             <div class="breadCrumb">
                 <ul class="breadcrumb">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Profile</a></li>
                     <li><a href="#">Gallery</a></li>
                     <li>Title</li>
                 </ul>
             </div>
 
             <div class="slideshow">
-                <img class="slideshowImg" src="img/banner.png" alt="Banner Pic">
+                <img class="slideshowImg" src="img/banner2.png" alt="Banner Pic">
 
 
             </div>
@@ -70,55 +66,293 @@
                 <h3>Gallery</h3>
             </div>
 
-
-
+<div class="flex-containerprofile">
+                <a href=""><button>Edit Gallery</button></a>
+                <a href="addProject.html"><button>Upload Project</button></a>
+                <a href="deleteProject.html"><button>Delete Project</button></a>
+                
+            </div>
             <div class="main">
 
-                <div class="GalleryItem">
-                    <img src="img/039.jpeg" alt="#####">
+                <div class="galleryItem">
+                    <div class="panelGalleryMain">
+                        <img src="img/039.jpeg" alt="#####">
+
+                    </div>
+
+                    <div class="descRating">
+                        <div class="panelGallery">
+
+                            <h3>Picture Title</h3>
+                            <a href="profile.html"><h4 class="username">User Name</h4></a>
+                            <h4 class="Date">Upload Date</h4>
+
+                            <p> ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+
+                            </p>
+                        </div>
+
+                        <div class="panelGallery">
+
+                            <h3>Comments</h3>
+
+                            <form class="comments" action="" method="get">
+                                <textarea rows="4" cols="20"></textarea>
+                                <input type="submit" value="Submit" />
+                            </form>
+
+
+                        </div>
+
+                        <div class="panelGalleryRate">
+
+                            <h3>Rating</h3>
+                            <h1>3/5</h1>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+
+                        </div>
+                    </div>
                 </div>
 
-                <div class="detailBox">
-                    <div class="panel2">
+            <div class="galleryItem">
+                    <div class="panelGalleryMain">
+                        <img src="img/039.jpeg" alt="#####">
 
-                        <h3>Description</h3>
-
-                        <p> adf db dbad dggdb adgb adgb agd bgb gd baddb adgb adgb adgb adb adgb adba badgb adb adb b </p>
                     </div>
 
-                    <div class="panel2">
+                    <div class="descRating">
+                        <div class="panelGallery">
 
-                        <h3>Comments</h3>
-                        <p> adf db dbad dggdb adgb adgb agd bgb gd baddb adgb adgb adgb adb adgb adba badgb adb adb b </p>
+                            <h3>Picture Title</h3>
+                            <h4 class="username">User Name</h4>
+                            <h4 class="Date">Upload Date</h4>
+
+                            <p> ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+
+                            </p>
+                        </div>
+
+                        <div class="panelGallery">
+
+                            <h3>Comments</h3>
+
+                            <form class="comments" action="" method="get">
+                                <textarea rows="4" cols="25"></textarea>
+                                <input type="submit" value="Submit" />
+                            </form>
+
+
+                        </div>
+
+                        <div class="panelGalleryRate">
+
+                            <h3>Rating</h3>
+                            <h1>3/5</h1>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+
+                        </div>
                     </div>
-
-                    <div class="panel2">
-
-                        <h3>Rating</h3>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <p> adf db dbad dggdb adgb adgb agd bgb gd baddb adgb adgb adgb adb adgb adba badgb adb adb b </p>
-                    </div>
-
                 </div>
-                .
-                <div class="footer">
-                    <p>Terms and Conditions</p>
-                    <div class="logos">
-                        <a href="#"><img src="img/facebook-logo-circle-transparent.png" alt="Facebook Logo"></a>
-                        <a href="#"><img src="img/twitterTP.png" alt="Twitter Logo"></a>
-                        <a href="#"><img src="img/litTP.png" alt="LIT Logo"></a>
-                        <a href="#"><img src="img/instaTP.jpg.png" alt="Instagram Logo"></a>
+                
+                <div class="galleryItem">
+                    <div class="panelGalleryMain">
+                        <img src="img/039.jpeg" alt="#####">
+
                     </div>
+
+                    <div class="descRating">
+                        <div class="panelGallery">
+
+                            <h3>Picture Title</h3>
+                            <h4 class="username">User Name</h4>
+                            <h4 class="Date">Upload Date</h4>
+
+                            <p> ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+
+                            </p>
+                        </div>
+
+                        <div class="panelGallery">
+
+                            <h3>Comments</h3>
+
+                            <form class="comments" action="" method="get">
+                                <textarea rows="4" cols="25"></textarea>
+                                <input type="submit" value="Submit" />
+                            </form>
+
+
+                        </div>
+
+                        <div class="panelGalleryRate">
+
+                            <h3>Rating</h3>
+                            <h1>3/5</h1>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="galleryItem">
+                    <div class="panelGalleryMain">
+                        <img src="img/039.jpeg" alt="#####">
+
+                    </div>
+
+                    <div class="descRating">
+                        <div class="panelGallery">
+
+                            <h3>Picture Title</h3>
+                            <h4 class="username">User Name</h4>
+                            <h4 class="Date">Upload Date</h4>
+
+                            <p> ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+
+                            </p>
+                        </div>
+
+                        <div class="panelGallery">
+
+                            <h3>Comments</h3>
+
+                            <form class="comments" action="" method="get">
+                                <textarea rows="4" cols="25"></textarea>
+                                <input type="submit" value="Submit" />
+                            </form>
+
+
+                        </div>
+
+                        <div class="panelGalleryRate">
+
+                            <h3>Rating</h3>
+                            <h1>3/5</h1>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="galleryItem">
+                    <div class="panelGalleryMain">
+                        <img src="img/039.jpeg" alt="#####">
+
+                    </div>
+
+                    <div class="descRating">
+                        <div class="panelGallery">
+
+                            <h3>Picture Title</h3>
+                            <h4 class="username">User Name</h4>
+                            <h4 class="Date">Upload Date</h4>
+
+                            <p> ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+
+                            </p>
+                        </div>
+
+                        <div class="panelGallery">
+
+                            <h3>Comments</h3>
+
+                            <form class="comments" action="" method="get">
+                                <textarea rows="4" cols="25"></textarea>
+                                <input type="submit" value="Submit" />
+                            </form>
+
+
+                        </div>
+
+                        <div class="panelGalleryRate">
+
+                            <h3>Rating</h3>
+                            <h1>3/5</h1>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="galleryItem">
+                    <div class="panelGalleryMain">
+                        <img src="img/039.jpeg" alt="#####">
+
+                    </div>
+
+                    <div class="descRating">
+                        <div class="panelGallery">
+
+                            <h3>Picture Title</h3>
+                            <h4 class="username">User Name</h4>
+                            <h4 class="Date">Upload Date</h4>
+
+                            <p> ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+
+                            </p>
+                        </div>
+
+                        <div class="panelGallery">
+
+                            <h3>Comments</h3>
+
+                            <form class="comments" action="" method="get">
+                                <textarea rows="4" cols="25"></textarea>
+                                <input type="submit" value="Submit" />
+                            </form>
+
+
+                        </div>
+
+                        <div class="panelGalleryRate">
+
+                            <h3>Rating</h3>
+                            <h1>3/5</h1>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            .
+            <div class="footer">
+                <p>Terms and Conditions</p>
+                <div class="logos">
+                    <a href="#"><img src="img/facebook-logo-circle-transparent.png" alt="Facebook Logo"></a>
+                    <a href="#"><img src="img/twitterTP.png" alt="Twitter Logo"></a>
+                    <a href="#"><img src="img/litTP.png" alt="LIT Logo"></a>
+                    <a href="#"><img src="img/instaTP.jpg.png" alt="Instagram Logo"></a>
                 </div>
             </div>
+
         </div>
     </div>
 
 </body>
 
 </html>
-
